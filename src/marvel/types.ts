@@ -1,4 +1,4 @@
-// src/marvel/types.ts
+// src/marvel/types.tsx
 export interface Thumbnail {
     path: string;
     extension: string;
