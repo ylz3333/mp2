@@ -1,0 +1,76 @@
+
+.gallery-container {
+  min-height: 100vh;
+  background-color: #1a1a1d; 
+  color: #f5f5f5;
+  padding: 40px 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gallery-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #e62429; 
+}
+
+
+.gallery-filter {
+  padding: 10px 14px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  background-color: #2b2f38;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.gallery-filter:focus {
+  background-color: #333843;
+  box-shadow: 0 0 0 2px #e62429;
+}
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+
+.gallery-card {
+  background-color: #2b2f38;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+}
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.gallery-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-name {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #61dafb;
+}
+.gallery-card:hover .gallery-name {
+  color: #e62429;
+}
